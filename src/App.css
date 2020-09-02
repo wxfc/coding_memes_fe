@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+body {
+  background-color: #B19F9E;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.display-my-memes {
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper {
+  background-color: #19181a;
+  border: 1px solid black;
   display: flex;
+  width: 700px;
+  height: 600px;
+  margin: 10px;
+  padding: 10px;
+  position: fixed;
+  top: 75px;
+  left: 120px;
+  overflow: scroll;
+  color: aliceblue;
+}
+
+.main-div .side, .main {
+  display: flex;
+  padding: 10px;
+}
+
+.main-div .side {
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: fixed;
+  top: 200px;
+  background-color: #479761;
 }
 
-.App-link {
-  color: #61dafb;
+.main-div .main {
+  flex-direction: row;
+  position: fixed;
+  padding: 20px 0px 26px 180px;
+  background-color: #479761;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-links {
+  padding: 10px;
+}
+
+.side-links {
+  padding: 20px 10px 20px 10px
+}
+
+.meme {
+  width: 400px;
+  opacity: 1;
 }
