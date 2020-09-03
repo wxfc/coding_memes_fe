@@ -21,7 +21,7 @@ const objectToQueryParam = obj => {
   
     if (meme) {
       return (
-        <div style={{ textAlign: "center" }}>
+        <div style={{ textAlign: "center" }} className="wrapper">       
           <img style={{ width: 200 }} style={{maxHeight: 400}} src={meme} alt="custom meme" />
         </div>
       );
@@ -52,6 +52,7 @@ const objectToQueryParam = obj => {
             }}
           >
             <Meme template={template} />
+            <div className="create-meme">
             <input
               placeholder="top text"
               value={topText}
@@ -64,12 +65,13 @@ const objectToQueryParam = obj => {
               onChange={e => setBottomText(e.target.value)}
               style={{display: 'block'}}
             />
-            <button type="submit" style={{display: 'block'}}>create meme</button>
+            <button type="submit" style={{display: 'block'}}>Create Meme</button>
+            </div>
           </form>
         )}
         {!template && (
           <>
-            <h1>Pick a template</h1>
+            <h2>Pick a template</h2>
             {templates.map(template => {
               return (
                 <Meme
