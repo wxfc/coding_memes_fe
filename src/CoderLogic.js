@@ -9,7 +9,7 @@ export default class CoderLogic extends React.Component {
 
     componentDidMount() {
         axios
-            .get('http://localhost:4567/coder_logic')
+            .get('https://enigmatic-everglades-95667.herokuapp.com/coder_logic')
             .then(res => {
                 let results = res.data
                 this.setState({

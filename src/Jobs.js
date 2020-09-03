@@ -9,7 +9,7 @@ export default class Jobs extends React.Component {
 
     componentDidMount() {
         axios
-            .get('http://localhost:4567/jobs')
+            .get('https://enigmatic-everglades-95667.herokuapp.com/jobs')
             .then(res => {
                 let results = res.data
                 this.setState({

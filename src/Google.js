@@ -9,7 +9,7 @@ export default class Google extends React.Component {
 
     componentDidMount() {
         axios
-            .get('http://localhost:4567/google')
+            .get('https://enigmatic-everglades-95667.herokuapp.com/google')
             .then(res => {
                 let results = res.data
                 this.setState({

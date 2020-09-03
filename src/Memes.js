@@ -9,7 +9,7 @@ export default class Memes extends React.Component {
 
     componentDidMount() {
         axios
-            .get('http://localhost:4567/memes')
+            .get('https://enigmatic-everglades-95667.herokuapp.com/memes')
             .then(res => {
                 let results = res.data
                 this.setState({
@@ -37,3 +37,4 @@ export default class Memes extends React.Component {
 }
 
 // https://enigmatic-everglades-95667.herokuapp.com
+// http://localhost:4567/memes

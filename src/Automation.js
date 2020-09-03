@@ -9,7 +9,7 @@ export default class Automation extends React.Component {
 
     componentDidMount() {
         axios
-            .get('http://localhost:4567/automation')
+            .get('https://enigmatic-everglades-95667.herokuapp.com/automation')
             .then(res => {
                 let results = res.data
                 this.setState({

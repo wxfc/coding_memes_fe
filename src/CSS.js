@@ -9,7 +9,7 @@ export default class CSS extends React.Component {
 
     componentDidMount() {
         axios
-            .get('http://localhost:4567/css')
+            .get('https://enigmatic-everglades-95667.herokuapp.com/css')
             .then(res => {
                 let results = res.data
                 this.setState({

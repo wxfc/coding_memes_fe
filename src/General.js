@@ -9,7 +9,7 @@ export default class General extends React.Component {
 
     componentDidMount() {
         axios
-            .get('http://localhost:4567/general')
+            .get('https://enigmatic-everglades-95667.herokuapp.com/general')
             .then(res => {
                 let results = res.data
                 this.setState({
