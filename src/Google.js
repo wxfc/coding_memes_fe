@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 
-export default class Memes extends React.Component {
+export default class Google extends React.Component {
 
     state = {
         memes: []
@@ -9,7 +9,7 @@ export default class Memes extends React.Component {
 
     componentDidMount() {
         axios
-            .get('http://localhost:4567/memes')
+            .get('http://localhost:4567/google')
             .then(res => {
                 let results = res.data
                 this.setState({
@@ -23,7 +23,7 @@ export default class Memes extends React.Component {
         return (
             <div className="wrapper" style={{ textAlign: "center" }}>
                 <div className="display-my-memes">
-                    <h2>All Memes</h2>
+                    <h2>Google Memes</h2>
                     {this.state.memes.map((meme, idx) => (
                         <div key={idx}>
                             <h5>{meme.title}</h5>
@@ -35,5 +35,3 @@ export default class Memes extends React.Component {
         )
     }
 }
-
-// https://enigmatic-everglades-95667.herokuapp.com
