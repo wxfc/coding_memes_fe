@@ -39,6 +39,7 @@ class App extends React.Component {
         <div className="main-div">
           <h1>Coding Memes</h1>
             <nav className="side">
+              <Link to="/" className="side-links">Home</Link>
               <Link to="/memes" className="side-links">All Memes</Link>
               <Link to="/automation" className="side-links">Automation Memes</Link>
               <Link to="/google" className="side-links">Google Memes</Link>
